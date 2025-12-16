@@ -9,7 +9,7 @@ void partTwo(std::ifstream* file);
 int main() {
    char cwd[PATH_MAX];
    std::string dir = getcwd(cwd, sizeof(cwd));
-   std::ifstream file = std::ifstream(dir + "\\input.txt");
+   std::ifstream file(dir + "\\input.txt");
 
    partOne(&file);
 

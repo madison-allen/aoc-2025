@@ -11,7 +11,7 @@ int checkNeighbors(std::vector<std::vector<char>> grid, int row, int col);
 int main() {
    char cwd[PATH_MAX];
    std::string dir = getcwd(cwd, sizeof(cwd));
-   std::ifstream file = std::ifstream(dir + "\\input.txt");
+   std::ifstream file(dir + "\\input.txt");
    std::string s;
    std::vector<std::vector<char>> grid;
 
